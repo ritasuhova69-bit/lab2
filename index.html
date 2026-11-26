@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Сухова Маргарита Алексеевна">
+  <meta name="description" content="Персональная страница студента НВГУ">
+  <title>Страница студента — Сухова М. А.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <img class="fox-happy" src="fox-happy.gif" alt="Анимированный лис">
+  <h1>Персональная страница студента</h1>
+  <h2><em>Сухова Маргарита Алексеевна</em></h2>
+</header>
+<nav>
+  <a href="#about">Обо мне</a>
+  <a href="#university">Мой вуз</a>
+  <a href="#profession">Профессия</a>
+  <a href="#hobby">Увлечения</a>
+  <a href="#pets">Питомцы</a>
+  <a href="tables.html">Таблицы</a>
+  <a href="forms.html">Формы</a>
+  <a href="css.html">CSS</a>
+</nav>
+
+<main>
+
+  <section id="about">
+    <h3>Обо мне</h3>
+    <img class="photo" src="photo.jpg" alt="Фото Суховой Маргариты">
+    <p>
+      Здравствуйте! Это сайт студентки <strong>Суховой Маргариты Алексеевны</strong>.
+      Я учусь на <b>факультете информационных технологий и математики</b>.<br>
+      Мне интересны <i>программирование</i>, <u>веб-разработка</u> и всё, что связано с ИТ.
+    </p>
+    <p>Девиз: <q>Век живи — век учись</q>.</p>
+    <blockquote cite="https://nvsu.ru">
+      Учиться никогда не поздно, а в мире информационных технологий — просто необходимо.
+    </blockquote>
+    <div class="clear"></div>
+  </section>
+
+  <section id="university">
+    <h3>Мой вуз — НВГУ</h3>
+    <p>
+      Я учусь в <abbr title="Нижневартовский государственный университет">НВГУ</abbr>
+      (ФГБОУ ВО «Нижневартовский государственный университет»).
+    </p>
+    <dl>
+      <dt>Факультет:</dt>
+      <dd><a href="https://tm.nvsu.ru/tm/index.php/list_of/inst/4">Информационных технологий и математики</a></dd>
+      <dt>Специальность:</dt>
+      <dd>Информатика и вычислительная техника (Программное обеспечение средств вычислительной техники и автоматизированных систем)</dd>
+      <dt>Моя группа:</dt>
+      <dd><a href="https://tm.nvsu.ru/tm/index.php/list_of/inst/4">3402</a></dd>
+    </dl>
+    <p>Сайт университета: <a href="https://nvsu.ru" target="_blank" title="Официальный сайт НВГУ">https://nvsu.ru</a></p>
+  </section>
+
+  <section id="profession">
+    <h3>Моя будущая профессия</h3>
+    <p>Моя будущая профессия — <strong>учитель информатики</strong>. В работе мне понадобятся:</p>
+    <ol>
+      <li>знание языков программирования;</li>
+      <li>умение работать с базами данных;</li>
+      <li>основы веб-технологий (<code>HTML</code>, <code>CSS</code>, <code>JavaScript</code>);</li>
+      <li>умение объяснять сложное простыми словами.</li>
+    </ol>
+    <p>Формула, которую я всегда помню: H<sub>2</sub>O — вода, а 2<sup>10</sup> = 1024.</p>
+  </section>
+
+  <section id="hobby">
+    <h3>Мои увлечения</h3>
+    <ul type="square">
+      <li>Программирование</li>
+      <li>Чтение книг</li>
+      <li>Музыка</li>
+      <li>Путешествия</li>
+      <li>Милые пушистики🦊</li>
+    </ul>
+    <p>
+      <del>Играть в компьютерные игры по ночам</del>
+      <ins>Лучше высыпаться перед парами</ins>
+    </p>
+  </section>
+
+  <section id="pets" class="gallery">
+    <h3>Мои любимки 🐾</h3>
+    <figure>
+      <img src="cat-orange.jpg" alt="Рыжий лис">
+      <figcaption>Рыжик отвечает за идеи</figcaption>
+    </figure>
+    <figure>
+      <img src="cat-black.jpg" alt="Волчёнок">
+      <figcaption>Волчёк ищет баги</figcaption>
+    </figure>
+    <figure>
+      <img src="cat-gray.jpg" alt="Котик">
+      <figcaption>Пушок следит за дедлайнами</figcaption>
+    </figure>
+  </section>
+
+  <section id="study">
+    <h3>Мои дисциплины</h3>
+    <table class="study">
+      <caption><b>Некоторые изучаемые предметы</b></caption>
+      <thead>
+        <tr><th>№</th><th>Дисциплина</th><th>Что изучаю</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Программирование на Java</td><td>Eclipse, Swing, базы данных H2</td></tr>
+        <tr><td>2</td><td>Визуальные среды программирования</td><td>Visual Studio, Eclipse, AWT и Swing</td></tr>
+        <tr><td>3</td><td>Основы web-программирования</td><td>Git, GitHub, HTML, CSS</td></tr>
+      </tbody>
+    </table>
+    <p><small>Список неполный — предметов гораздо больше.😒</small></p>
+    <pre>
+Пример кода на HTML:
+&lt;h1&gt;Привет, мир!&lt;/h1&gt;
+    </pre>
+    <p><s>Не</s> люблю откладывать лабораторные на последний день.👀</p>
+  </section>
+
+</main>
+
+<footer id="contacts">
+  <h3>Контакты</h3>
+  <address>
+    Электронная почта: <a href="mailto:ritasuhova69@gmail.com">ritasuhova69@gmail.com</a><br>
+    Адрес корпуса: г. Нижневартовск, ул. Дзержинского, д. 11
+  </address>
+  <p><small>&copy; 2026, Сухова М. А. Все права защищены.</small></p>
+</footer>
+
+</body>
+</html>

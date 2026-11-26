@@ -1,0 +1,8 @@
+/*3) ВНЕШНИЙ CSS*/
+body { font-family: Arial, sans-serif; font-size: 16px; width: 760px; margin: 20px auto; background-color: white; color: black; }
+#title { text-align: center; color: #2020d0; letter-spacing: 8px; font-size: 36px; }
+.center { text-align: center; }
+.right { text-align: right; }
+.gray { background-color: silver; }
+#table1 { border: 2px solid black; border-collapse: collapse; width: 100%; }
+#table1 td { border: 2px solid black; padding: 2px 4px; }

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Задание 2.3 — Формы</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+
+<!-- Форма А -->
+<h1>ЗАО Птицефабрика №1</h1>
+<form action="#" method="post">
+  <table cellspacing="2" cellpadding="1">
+    <tr>
+      <td align="right"><label for="fam">Фамилия</label></td>
+      <td><input type="text" id="fam" name="fam" size="30"></td>
+    </tr>
+    <tr>
+      <td align="right"><label for="init">Инициалы</label></td>
+      <td><input type="text" id="init" name="init" size="30"></td>
+    </tr>
+    <tr>
+      <td align="right"><label for="pass">Пароль</label></td>
+      <td><input type="password" id="pass" name="pass" size="30"></td>
+    </tr>
+    <tr>
+      <td align="right"><label for="addr">Адрес получателя</label></td>
+      <td><input type="text" id="addr" name="addr" size="60"></td>
+    </tr>
+    <tr>
+      <td align="right"><label for="count">Количество</label></td>
+      <td><input type="text" id="count" name="count" size="10"></td>
+    </tr>
+    <tr>
+      <td align="right">Тип</td>
+      <td>
+        <select name="type1">
+          <option>Куриные</option>
+          <option>Перепелиные</option>
+          <option>Утиные</option>
+        </select>
+        <select name="type2">
+          <option>Отборные</option>
+          <option>Первая категория</option>
+          <option>Вторая категория</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td align="right">Доставка</td>
+      <td>
+        <input type="radio" name="delivery" id="d1" value="post"><label for="d1">Почтой</label>
+        <input type="radio" name="delivery" id="d2" value="email"><label for="d2">Электронно</label>
+        <input type="radio" name="delivery" id="d3" value="courier"><label for="d3">Курьером</label>
+      </td>
+    </tr>
+    <tr>
+      <td align="right"><label for="invoice">Требуется накладная</label></td>
+      <td><input type="checkbox" id="invoice" name="invoice"></td>
+    </tr>
+    <tr>
+      <td align="right" valign="top"><label for="info">Дополнительная информация</label></td>
+      <td><textarea id="info" name="info" rows="3" cols="50"></textarea></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <input type="submit" value="Заказать">
+        <input type="reset" value="Отменить">
+      </td>
+    </tr>
+  </table>
+</form>
+
+<hr>
+
+<!-- Форма Б -->
+<h1 style="font-weight: normal;">Пример формы регистрации сайта</h1>
+<form action="#" method="post" enctype="multipart/form-data">
+  <label for="login">Логин:</label><br>
+  <input type="text" id="login" name="login"><br>
+
+  <label for="pwd">Пароль:</label><br>
+  <input type="password" id="pwd" name="pwd" value="123456"><br>
+
+  <label for="url">URL-адрес сайта:</label><br>
+  <input type="text" id="url" name="url" value="http://"><br>
+
+  <label for="sitename">Название сайта:</label><br>
+  <input type="text" id="sitename" name="sitename"><br>
+
+  <label for="descr">Описание сайта:</label><br>
+  <textarea id="descr" name="descr" rows="8" cols="55"></textarea><br>
+
+  <label for="theme">Тема сайта:</label><br>
+  <select id="theme" name="theme">
+    <option>Тема не выбрана</option>
+    <option>Новости</option>
+    <option>Образование</option>
+    <option>Развлечения</option>
+  </select><br>
+
+  <label for="banner">Баннер 88x31:</label><br>
+  <input type="file" id="banner" name="banner"><br><br>
+
+  <input type="reset" value="Очистить">
+  <input type="submit" value="Отправить">
+</form>
+
+<p><a href="index.html">← На главную</a></p>
+</main>
+</body>
+</html>

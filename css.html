@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Задание 3 — CSS</title>
+  <!--Внешний CSS: ссылка на файл-->
+  <link rel="stylesheet" href="task3.css">
+  <!--Внутренний CSS-->
+  <style>
+    h2 { color: purple; font-family: "Times New Roman", serif; }
+    .cyan { background-color: cyan; }
+    .yellow { background-color: yellow; }
+    .magenta { background-color: magenta; }
+    .big { font-size: 22px; }
+    .blue { color: blue; }
+    .u { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<h1 id="title">Таблицы в HTML</h1>
+
+<p class="center">
+  <span class="cyan">Одним из наиболее мощных и широко применяемых в
+  <b class="big" style="font-family: Arial;">HTML</b> средств являются
+  <i class="big">таблицы</i>.</span>
+</p>
+
+<p class="right">
+  <span class="yellow u big">Понятие табличного представления данных не нуждается в дополнительном пояснении.</span>
+  <span class="gray" style="font-size: 14px;">В HTML таблицы используются не только традиционно, как метод представления данных, но и как средство форматирования Web-страниц.</span>
+</p>
+
+<h2>Создание простейших HTML-таблиц</h2>
+
+<p>
+  <span class="magenta big" style="font-weight: bold; font-style: italic;">Описание</span>
+  <i class="u">таблиц</i> <b class="u">должно</b> располагаться внутри раздела документа &lt;BODY&gt;.
+</p>
+
+<p class="center">
+  Каждая <span class="blue u">таблица</span> должна
+  <b class="big">начинаться</b> тэгом &lt;TABLE&gt; и завершаться тэгом &lt;/TABLE&gt;.
+</p>
+
+<p class="center gray">
+  <b><i class="blue">Каждая</i></b> строка начинается тэгом &lt;TR&gt; (Table Row) и завершается тэгом &lt;/TR&gt;.
+  <b><i style="color: red;">Отдельная</i></b> ячейка в строке обрамляется парой тегов &lt;TD&gt; и &lt;/TD&gt;
+  (Table Data) или &lt;TH&gt; и &lt;/TH&gt; (Table Header)
+</p>
+
+<p class="right"><b>Таблица 1</b></p>
+<p class="center"><b><i class="blue u">Математические выражения</i></b></p>
+
+<table id="table1">
+  <tr>
+    <td style="font-weight: bold; font-style: italic; font-size: 13px;">Поле1</td>
+    <td class="center" style="background-color: black; color: white; font-weight: bold;">Поле 2</td>
+    <td class="right cyan blue big" style="font-weight: bold;">Поле 3</td>
+    <td style="background-color: #ff99cc; font-weight: bold; font-style: italic; text-decoration: underline;">Поле 4</td>
+    <td class="center yellow" style="font-weight: bold; letter-spacing: 3px;">Поле 5</td>
+  </tr>
+  <tr>
+    <td class="blue" style="font-weight: bold;">(a+b)<sup>2</sup></td>
+    <td class="center" style="font-weight: bold;">a<sup>2</sup>-b<sup>2</sup></td>
+    <td class="right blue" style="font-weight: bold;">(a-b)<sup>3</sup></td>
+    <td style="font-weight: bold;">A<sub>1</sub>+A<sub>2</sub>+…A<sub>i</sub></td>
+    <td class="center blue" style="font-weight: bold;">y=x<sup>2</sup></td>
+  </tr>
+</table>
+
+<p><a href="index.html">← На главную</a></p>
+</body>
+</html>
